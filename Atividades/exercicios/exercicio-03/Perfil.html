@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
     <title>Introdução</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
@@ -34,10 +36,11 @@
         }
 
         div#dados {
-            font-family: arial;
+            font-family: Roboto;
             font-size: 15pt;
             border-style: solid;
             border-radius: 15px;
+            align-content: center;
         }
     
     </style>
@@ -53,12 +56,12 @@
         <div class="main">
             <br>
             <!-- NOVO MENU RESPONSIVO -->
-            <ul class="nav nav-pills nav-fill justify-content-center">
+            <ul class="nav nav-pills nav-fill justify-content-center bg-light">
                 <li class="nav-item">
                 <a class="nav-link" href="SistemaBDWeb.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="relatorioDePessoas.html">Pessoas</a>
+                <a class="nav-link" aria-current="page" href="relatorioDePessoas.html">Pessoas</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="Estados.html">Estados</a>
@@ -70,7 +73,7 @@
                     <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="Produtos.html">Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Perfil.html">Perfil</a>
+                    <a class="nav-link active" href="Perfil.html">Perfil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="Sair.html">Sair</a>
@@ -78,15 +81,23 @@
             </ul>
 
             <br>
-            <div>
-                <img width="30%" src="../exercicio-01/img/dev.jpg" alt="banco de dados">
-            </div>
-            <div id="dados">
-                <p>Nome: Marcus Vinícius </p>
-                <p>usuário: mvinicius</p>
-                <p>Email: mvinicius@gmail.com</p>
-                <p>Data de Criação: 01/01/2021</p>
-                <p>Ultimo acesso: 02/02/2021</p>
+            <div class="container">
+        
+                <div class="row">
+        
+                    <div class="col-4 ">
+                        <img width="60%" src="../exercicio-01/img/dev.jpg" alt="banco de dados">
+                    </div>
+                    <div class="col-8 bg-light " id="dados">
+                        <p>Nome: Marcus Vinícius </p>
+                        <p>usuário: mvinicius</p>
+                        <p>Email: mvinicius@gmail.com</p>
+                        <p>Data de Criação: 01/01/2021</p>
+                        <p>Ultimo acesso: 02/02/2021</p>
+                    </div>
+        
+                </div>
+                
             </div>
         </div>
         
