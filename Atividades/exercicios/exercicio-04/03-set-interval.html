@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+
+    </title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="dados" class="row">
+        <div id="pessoa" class="col-6"> </div>
+        <div id="endereco" class="col-6"> </div>
+    </div>
+
+    <h1>Dados do cadastro de Pessoas</h1>
+    <div class="formulario">
+        <form name="dados">
+            <!-- <form method="POST" action="validar.html"> -->
+            <div class="form-group col-4">
+                <label for="usuario">Usuario:</label>
+                <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Usuario da Pessoa">
+            </div>
+            <div class="form-group col-4">
+                <!-- <p>Nome: </p> -->
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome da Pessoa">
+            </div>
+
+            <div class="form-group col-4">
+                <label for="email">E-mail:</label>
+                <input class="form-control" type="text" name="email" id="email" placeholder="Email da Pessoa">
+            </div>
+            <div class="form-group col-4">
+                <label for="datadecriação">Data de criação:</label>
+                <input class="form-control" type="text" name="datadecriação" id="datadecriação"
+                    placeholder="Data de criação">
+            </div>
+            <br>
+            <input class="btn btn-success" type="submit" onclick="comecar()" value="Cadastrar">
+            <input class="btn btn-danger" type="reset" onclick="parar()" value="Limpar">
+            <a type="button" class="btn btn-secondary" href="relatorioDePessoas.html">Voltar</a>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
