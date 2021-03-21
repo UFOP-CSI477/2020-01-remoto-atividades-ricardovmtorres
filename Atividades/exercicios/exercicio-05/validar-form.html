@@ -9,23 +9,21 @@
     </title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 
 <body>
-    <div id="dados" class="row">
+    <div id="dados1" class="row">
         <div id="pessoa" class="col-6"> </div>
         <div id="endereco" class="col-6"> </div>
     </div>
 
     <h1>Dados do cadastro de Pessoas</h1>
     <div class="formulario">
-        <form name="dados">
+        <form action="validar.php" method="post" name="dados">
             <!-- <form method="POST" action="validar.html"> -->
             <div class="form-group col-4">
                 <label for="usuario">Usuario:</label>
-                <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Usuario da Pessoa">
+                <input class="form-control" type="text" name="usuario" id="user" placeholder="Usuario da Pessoa">
             </div>
             <div class="form-group col-4">
                 <!-- <p>Nome: </p> -->
@@ -38,14 +36,12 @@
                 <input class="form-control" type="text" name="email" id="email" placeholder="Email da Pessoa">
             </div>
             <div class="form-group col-4">
-                <label for="datadecriação">Data de criação:</label>
-                <input class="form-control" type="text" name="datadecriação" id="datadecriação"
-                    placeholder="Data de criação">
+                <label for="datadecriação">Senha:</label>
+                <input type="password" name="senha" id="password" placeholder="Senha">
             </div>
             <br>
-            <input class="btn btn-success" type="submit" onclick="imprimirDados()" value="Cadastrar">
+            <input class="btn btn-success" type="submit" onclick="validacao()" value="Cadastrar">
             <input class="btn btn-danger" type="reset" value="Limpar">
-            <a type="button" class="btn btn-secondary" href="relatorioDePessoas.html">Voltar</a>
         </form>
 
     </div>

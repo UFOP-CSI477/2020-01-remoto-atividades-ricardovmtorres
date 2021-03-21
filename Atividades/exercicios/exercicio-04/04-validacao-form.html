@@ -9,12 +9,12 @@
     </title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js'>    </script>
+    <script src='validacao.js'>    </script>
 </head>
 
 <body>
-    <div id="dados" class="row">
+    <div id="dados1" class="row">
         <div id="pessoa" class="col-6"> </div>
         <div id="endereco" class="col-6"> </div>
     </div>
@@ -43,7 +43,7 @@
                     placeholder="Data de criação">
             </div>
             <br>
-            <input class="btn btn-success" type="submit" onclick="imprimirDados()" value="Cadastrar">
+            <input class="btn btn-success" type="button" onclick="validacao()" value="Cadastrar">
             <input class="btn btn-danger" type="reset" value="Limpar">
             <a type="button" class="btn btn-secondary" href="relatorioDePessoas.html">Voltar</a>
         </form>

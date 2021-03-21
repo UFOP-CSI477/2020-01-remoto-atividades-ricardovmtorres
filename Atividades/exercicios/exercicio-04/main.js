@@ -47,13 +47,13 @@ function inserirDados() {
 }
 
 function imprimirDados() {
-    const user = documment.dados.usuario;
-    const nome = documment.dados.nome;
-    const email = documment.dados.email;
-    const data = documment.dados.data;
+    const user = document.dados.usuario;
+    const nome = document.dados.nome;
+    const email = document.dados.email;
+    const data = document.dados.data;
 
     const dados = new Dados(user, nome, email, data);
-    document.getElementById("dados").innerHTML = "<h2>Dados pessoais</h2><p>Dados: " + dados.user + "</p><p>Nome: " + dados.nome + "</p><p>Email: "
+    document.getElementById("dados1").innerHTML = "<h2>Dados pessoais</h2><p>Dados: " + dados.user + "</p><p>Nome: " + dados.nome + "</p><p>Email: "
         + dados.email + "</p> <p>Data de criação: "
         + dados.data + "</p>";
 }
