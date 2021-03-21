@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro de Corredores</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div id="cadastro" style="margin-top: 10px; margin-left: 10px;">
+        <form method="POST" name="frmDados">
+            <div class="row">
+                <div class="col-2">
+                    <p>Largada</p>
+                    <input class="form-control" type="text" name="largada" id="largada" readonly>
+                </div>
+                <div class="col-6">
+                    <p>Competidor(a)</p>
+                    <input class="form-control" type="text" name="nome" id="nome">
+                </div>
+                <div class="col-2">
+                    <p>Tempo (s)</p>
+                    <input class="form-control" type="text" name="tempo" id="tempo">
+                </div>
+                <div class="col-2" style="margin-top: 40px;">
+                    <input type="button" value="Adicionar" id="add" class="btn btn-info" onclick="adicionarCorredor()">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="tabela" style="margin-top: 10px;">
+        <table class="table table-bordered table-hover">
+            <thead class="thead table-dark">
+                <tr>
+                    <th scope="col">Largada</th>
+                    <th scope="col">Competidor(a)</th>
+                    <th scope="col">Tempo (s)</th>
+                </tr>
+            </thead>
+            <tbody id="corpo">
+
+            </tbody>
+        </table>
+        <input type="button" value="Resultado" id="resultado" class="btn btn-primary" onclick="resultado()">
+
+    </div>
+    <div id="tabela2" style="margin-top: 10px; display: none;">
+        <table class="table table-bordered table-hover">
+            <thead class="thead table-dark">
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Largada</th>
+                    <th scope="col">Competidor(a)</th>
+                    <th scope="col">Tempo (s)</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="corpo2">
+
+            </tbody>
+        </table>
+    </div>
+    <script src='corrida.js'></script>
+</body>
+
+</html>
