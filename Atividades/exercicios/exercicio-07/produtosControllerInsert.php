@@ -1,0 +1,26 @@
+<?php
+require 'connection.php';
+
+$nome = $_POST['nome'];
+$um = $_POST['um'];
+
+if (empty($nome) || empty($um)) {
+    echo '<div><a href="produtosViewInsert.php">Voltar</a></div>';
+    die("Informe os dados novamente");
+}
+try {
+    $stmt = $connection->prepare("INSERT INTO produtos (nome, um) VALUES(:nome, :um)");
+
+    $stmt->bindParam(':nome', $nome);
+    $stmt->bindParam(':um', $um);
+
+    $stmt->execute();
+
+    $connection->commit();
+
+    header('Location: index.php');
+    exit();
+} catch (Exception $e) {
+    $connection->rollBack();
+    die("Erro ao inserir o estado: " . $e->getMessage());
+}
